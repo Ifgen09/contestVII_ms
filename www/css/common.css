@@ -1,17 +1,91 @@
 @import "reset.css";
+/*fonts*/
+@font-face {
+  font-family: PFEnscoreSansProUBlack;
+  font-style: normal;
+  src: url("../fonts/PFEncoreSansPro-UBlack.otf");
+}
+@font-face {
+  font-family: PFEnscoreSansProUThin;
+  font-style: normal;
+  src: url("../fonts/PFEncoreSansPro-UThin.otf");
+}
+@font-face {
+  font-family: PFEnscoreSansProLight;
+  font-style: normal;
+  src: url("../fonts/PFEncoreSansPro-Light.otf");
+}
+/*end of fonts*/
+html,
+body {
+  height: 100%;
+}
 a {
   text-decoration: none;
   color: #000;
+}
+.f-uthin {
+  font-family: "PFEnscoreSansProUThin";
+}
+.f-ublack {
+  font-family: "PFEnscoreSansProUBlack";
+}
+.f-light {
+  font-family: "PFEnscoreSansProLight";
 }
 .buy-ticket {
   border: 6px solid #000;
   text-transform: uppercase;
 }
 .buy-ticket.big {
-  padding: 25px 163px 25px 163px;
+  padding: 24px 168px 16px;
   transition: all 0.5s;
+  display: inline-block;
+  margin-bottom: 62px;
+  margin-top: 28px;
 }
 .buy-ticket.big:hover {
   background-color: #000;
   color: #fff;
+}
+.first-section {
+  height: 100%;
+}
+.left-side {
+  background-color: #f8de2e;
+  float: left;
+  height: 100%;
+  width: 70%;
+/*margin-left: -10%;*/
+/*transform: skew(-20deg);*/
+/*width: 70%;*/
+/*z-index: 1;*/
+}
+.left-side h1 {
+  font-size: 130px;
+  line-height: 98px;
+  text-transform: uppercase;
+/*margin-bottom: 58px;*/
+}
+.left-side h1 .date {
+  font-size: 40px;
+  text-transform: lowercase;
+  font-family: "PFEnscoreSansProUThin";
+  font-weight: 600;
+}
+.left-side--inner {
+/*padding-left: 107px;*/
+/*padding-top: 93px;*/
+  padding-left: 11%;
+  padding-top: 10%;
+}
+.right-side {
+  background-color: #000;
+  float: right;
+  height: 100%;
+  width: 30%;
+/*margin-right: -10%;*/
+/*transform: skew(-20deg);*/
+/*width: 50%;*/
+/*z-index 0;*/
 }
